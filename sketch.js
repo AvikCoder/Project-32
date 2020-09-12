@@ -61,8 +61,9 @@ function setup() {
 
 
 function draw() {
- 
+ if (bg !== null){
   background(bg);
+ }
   textSize(35)
   fill("white")
   rectMode(CENTER);
@@ -142,7 +143,7 @@ async function getBackgroundImg(){
   if(hour>=06 && hour<=19){
       bg = 200;
   }
-  else{
+  else {
       bg = 0;
   }
 
